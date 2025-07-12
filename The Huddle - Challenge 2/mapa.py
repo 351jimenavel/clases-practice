@@ -11,9 +11,11 @@ class Mapa:
     #--------métodos--------
     def colocar_entrada(self, fila_e, columna_e):
         self.matriz[fila_e][columna_e] = "E"
+        self.entrada = (fila_e, columna_e)
 
     def colocar_salida(self, fila_s, columna_s):
         self.matriz[fila_s][columna_s] = "S"
+        self.salida = (fila_s, columna_s)
 
     def colocar_obstaculos(self, fila, columna, tipo, cantidad):
         if self.coordenada_valida(fila, columna):
